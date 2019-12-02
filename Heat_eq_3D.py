@@ -13,7 +13,7 @@ import numpy as np
 import tensorflow as tf
 import deepxde as dde
 import matplotlib.pyplot as plt
-#sess = tf.Session()
+
 
 def pde(x, u):
         du = tf.gradients(u, x)[0]

@@ -60,8 +60,6 @@ u = model.predict(data)
 
 U=np.reshape(u,(10,10,10,10))
 
-#print(U[:,:,50,0])
-
 for k in range(0,10):
     im1 = plt.imshow(U[5,:,:,k], cmap=plt.cm.RdBu, extent=(0, 1,0, 1),interpolation='bilinear')
     plt.clim(0,0.5)

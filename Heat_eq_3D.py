@@ -54,9 +54,7 @@ t = np.linspace(0, 1, 10)
 xx, yy, zz, tt = np.meshgrid(x, y, z, t)
 data = np.vstack((np.ravel(xx), np.ravel(yy), np.ravel(zz), np.ravel(tt))).T
 
-
 u = model.predict(data)
-
 
 U=np.reshape(u,(10,10,10,10))
 
